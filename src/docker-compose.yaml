@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  convert-temp:
+    image: giancarloh/conversao-temperatura:v2
+    ports:
+     - 8080:8080
+    networks:
+      - convert-temp
