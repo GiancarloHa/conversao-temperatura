@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: conversao-temperatura
@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: conversao-temperatura
-          image: giancarloh/conversao-temperatura:v2
+          image: giancarloh/conversao-temperatura:v1
 ---
-apiVersion: v2
+apiVersion: v1
 kind: Service
 metadata:
   name: conversao-temperatura
